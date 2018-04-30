@@ -76,15 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void send_click(View view) {
-        if(myCmd==null)
-        {
-            Toast.makeText(MainActivity.this, "Bạn chưa chọn", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        notify(checkCommand(myCmd,COMMAND.BAO),myCmd,COMMAND.BAO);
-    }
-
     private RESULT checkCommand(COMMAND player, COMMAND competitor){
         switch (player){
             case BAO:
